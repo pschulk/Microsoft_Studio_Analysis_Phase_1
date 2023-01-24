@@ -2,7 +2,7 @@
 
 ![blueprint](images/blueprint.png)
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project>
+This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
 
 ## Repository Contents
 
@@ -13,7 +13,7 @@ Below is a list of the contents of this repository - instructions for using them
 - `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
 - `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
 - `zippedData` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files
+- `images` folder: A folder for the images you reference in your files 
 - `.gitignore`: A hidden file that tells git to not track certain files and folders
 
 ## Instructions For Using This Repository
@@ -24,7 +24,7 @@ Below is a list of the contents of this repository - instructions for using them
 
 1. Fork this repository to your personal account
    - In GitHub, go to this repository and click the "Fork" button in the upper right
-
+   
 2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
    - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
    - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
