@@ -1,14 +1,22 @@
-# Title
+![banner](./images/MovieBanner.jpg)
+
+# Recommendations for Microsoft's Brand New Movie Studio
 
 **Authors**: Dietrich Nigh, Annie Zheng, Paul Schulken
 
 ## Overview
 
-With the return of theatrical movie releases, in addition to the increase in streaming video content, Microsoft has expressed interest in creating their own movie studio. To maximize their chances of success, they have requested an analysis of the best performing movies at the box office. This analysis explored the factors that tend to make a movie commercially and critically successful. The relationship between box office results and genre, votes received for rating, and release dates were analyzed to determine what combinations were most likely to produce popular and profitable movies. The analysis found that adventure movies, particularly animated ones, were big hits with audiences especially if they were released in the summer.
+With the return of theatrical movie releases, in addition to the increase in streaming video content, Microsoft has expressed interest in creating their own movie studio. To maximize their chances of success, they have requested an analysis of the best performing movies at the box office. This analysis explored the factors that tend to make a movie commercially and critically successful. The relationship between box office results and genre, votes received for rating, and release dates were analyzed to determine what combinations were most likely to produce popular and profitable movies.
 
 ## Business Problem
 
-Creating a movie studio is a big undertaking and therefore requires a good amount of forethought. Our statistical analysis of variables will assist Microsoft in determining the direction of their studio. Like any business, the studio must make money to remain operational so the box office results were focused on from the beginning. Profitability, genre, seasonality, and runtimes were the focal points of the analysis and were deemed to be vital to the success of a movie and the studio itself. What makes a high grossing movie? The team analyzed the gross profits compared to movie genres that most people took interest in as well as seasonality to determine the best release time. We also analyzed run times of movies to determine whether the length of a movie would affect a movie's likability. By determining the factors most correlated with box office success, Microsoft's new studio can use the results to produce movies with confidence that they'll be profitable and well received.
+Creating a movie studio is a big undertaking and therefore requires a good amount of forethought. Our statistical analysis of variables will assist Microsoft stakeholders in determining the direction of their studio. Like any business, the studio must make money to remain operational so the box office results were focused on from the beginning. Profitability, genre, seasonality, and runtimes were the focal points of the analysis and were deemed to be vital to the success of a movie and the studio itself. What makes a high grossing movie? The team analyzed the gross profits compared to movie genres that most people took interest in as well as seasonality to determine the best release time. We also analyzed run times of movies to determine whether the length of a movie would affect a movie's likability. By determining the factors most correlated with box office success, Microsoft's new studio can use the results to produce movies with confidence that they'll be profitable and well received.
+
+## The Bottom Line
+
+1. Movie creation should focus on Animation.
+2. Release in Summer or it could be a bummer. Alternatively, when the weather is lackluster, release a winter blockbuster.
+3. Short or long, run times can't go wrong.
 
 ## Data
 
@@ -16,22 +24,29 @@ The data used in this analysis was taken from [IMDB](https://www.imdb.com/), [Th
 
 ## Methods
 
-In order to perform our analysis, our team merged several tables together to obtain a full dataset. In doing so, we accumulated columns that contained duplicate or unnecessary data to our analysis and those columns were dropped. Data such as the numeric genre codes were changed to the respective genre titles that correlated to The Movie Database's database. Lastly, columns for Profit and Profit:Budget Ratio were calculated to be used in the visualizations.
+In order to perform our analysis, our team merged several tables together to obtain a full dataset. In doing so, we accumulated columns that contained duplicate or unnecessary data to our analysis and those columns were dropped. Data such as the numeric genre codes were changed to the respective genre titles that correlated to The Movie Database's database in order to gain a better understanding of movie genre breakdowns. Lastly, columns for Profit and Profit:Budget Ratio were calculated to be used in the visualizations.
 
-The dataset includes movies released from 2009-2019 and was filtered for movies that had worldwide gross profit greater than those within the 25th quartile. These changes were made to filter out the least popular movies in terms of reception and financial success. Identifying trends in the movies that remain in the data set allowed us to base our recommendations on the most well received movies.
+The dataset was filtered for movies that had worldwide gross profit greater than the those within the 25th quartile in order to analyze the movies that exceled and profited to a worldwide audience rather than domestically. Our focus were the top grossing movies. The dataset was filtered to only the most recent decade of movies (2009-2019) in order to keep the analysis focused on current movie metrics. The movie genres that made up less than 1% of the data were dropped to prevent outliers from affecting the overall data. Identifying trends in the movies that remain in the data set allowed us to base our recommendations on the most well received movies.
 
 ## Data Modeling
 
-Charts were created to provide a visual reference for the master data set. Charting the highest grossing movies compared to their genre, release month, runtime, and number of votes allowed for quick identification of the most frequently occuring variables in successful movies. Statistical measures like the mean and bottom 25% quartile were applied to find average values across the dataset and remove the worst performing movies. We did not want the analyis to consider movies that performed poorly or were not representative of the data as a whole when making recommendations on how to produce profitable movies.
+Charts were created to provide a visual reference for the master data set. Charting the highest grossing movies compared to their genre, release month, runtime, and number of votes allowed for quick identification of the most frequently occuring variables in successful movies. Statistical measures like the mean and bottom 25% quartile were applied to find average values across the dataset and remove the worst performing movies.
 
 ## Evaluation & Results
 
-The analysis showed that animation is very profitable and receives on average received a high number of votes in terms of audience and critic ratings, indicating its popularity. The answer to the best time to release a movie is clear: the months of May, June, and July are very successful release months. The second best time is either November or December. The analysis also determined that there was no strong correlation between runtime and return on investment.
+The analysis showed that animation is very profitable and receives on average received a high number of votes in terms of audience and critic ratings, indicating its popularity.
 
-Here is an example of how to embed images from your sub-folder:
+![WorldWide Profits & Votes Received by Primary Genre](./images/wwprofits_votes_primary_genre.png)
 
-### Visual 1
-![graph1](./images/viz1.png)
+![WorldWide Profits & Votes Received by Secondary Genre](./images/wwprofits_votes_secondary_genre.png)
+
+The answer to the best time to release a movie is clear: the months of May, June, and July are very successful release months. The second best time is either November or December.
+
+![Median Worldwide Profits by Month](./images/median_profit_month.png)
+
+The analysis also determined that there was no strong correlation between runtime and return on investment.
+
+![Median ROI by Runtime](./images/median_roi_runtime.png)
 
 ## Conclusions
 
@@ -60,24 +75,18 @@ Next Steps:
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
-
-For any additional questions, please contact **name & email, name & email**
+Please review our full analysis in [our Jupyter Notebook](./Phase1_Project_Notebook.ipynb) or our [presentation](./presentation.pdf).
 
 ## Repository Structure
 
 Describe the structure of your repository and its contents, for example:
 
 ```
-├── __init__.py                         <- .py file that signals to python these folders contain packages
+├── exploratory_files                   <- Jupyter notebooks for data exploration and testing
+├── images                              <- Both sourced externally and generated from code
+├── zippedData                          <- Data files used in analysis
+├── .gitignore                          <- Code to avoid uploading specified files
+├── Phase1_Project_Notebook.ipynb       <- Narrative documentation of analysis in Jupyter notebook
 ├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── code
-│   ├── __init__.py                     <- .py file that signals to python these folders contain packages
-│   ├── visualizations.py               <- .py script to create finalized versions of visuals for project
-│   ├── data_preparation.py             <- .py script used to pre-process and clean data
-│   └── eda_notebook.ipynb              <- Notebook containing data exploration
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── presentation.pdf                    <- PDF version of project presentation
 ```
