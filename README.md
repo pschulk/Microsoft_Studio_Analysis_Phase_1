@@ -28,6 +28,13 @@ In order to perform our analysis, our team merged several tables together to obt
 
 The dataset was filtered for movies that had worldwide gross profit greater than the those within the 25th quartile in order to analyze the movies that exceled and profited to a worldwide audience rather than domestically. Our focus were the top grossing movies. The dataset was filtered to only the most recent decade of movies (2009-2019) in order to keep the analysis focused on current movie metrics. The movie genres that made up less than 1% of the data were dropped to prevent outliers from affecting the overall data. Identifying trends in the movies that remain in the data set allowed us to base our recommendations on the most well received movies.
 
+## Limitations
+
+ - Financial data not adjusted for inflation
+ - Missing data
+ - Data Pollution
+ - Cost of acquiring pre-existing intellectual property not factored in
+
 ## Data Modeling
 
 Charts were created to provide a visual reference for the master data set. Charting the highest grossing movies compared to their genre, release month, runtime, and number of votes allowed for quick identification of the most frequently occuring variables in successful movies. Statistical measures like the mean and bottom 25% quartile were applied to find average values across the dataset and remove the worst performing movies.
@@ -50,36 +57,29 @@ The analysis also determined that there was no strong correlation between runtim
 
 ## Conclusions
 
-Recommendation 1: Focus on an Animation Genre Movie
-*This genre of movie was shown to have the highest profitability, including worldwide gross, net profit, profit to production cost ratio.
-*Based on audience votes, this genre is highly ranked.
-*Due to their typically kid-friendly nature, the potential audience range for animated movies spans across the largest age range.
+1. Focus on an Animation Genre Movie
+    This genre of movie was shown to have the highest profitability, including worldwide gross, net profit, profit to production cost ratio. It has received on average received a high number of votes in terms of audience and critic ratings, indicating its popularity. Due to their typically kid-friendly nature, the potential audience range for animated movies typically spans across the largest age range.
 
-Recommendation 2: Released the Movie in the Summer or Right Before the Winter Holidays
-*Movies released around these seasons profited the most. This could be attributed to the larger amount of free time people typically have during these time periods.
+2. Release the Movie in the Summer or Right Before the Winter Holidays
+    Movies released around these seasons profited the most. The months of May, June, and July in particular are very successful release months. The second best time is either November or December. Movie awards season typically begins late in the year in the United States and release of a movie before the winter holidays will get your movie in the running just in time. These time periods are generally a time when children are out of school and adults will have time off of work as a result of vacation or holiday leave.
 
-Recommendation 3: Do not be overly concerned with movie Run Time
-*There is no strong correlation with votes, profit, or ROI when comparing short vs. long run times.
+3. Do not be overly concerned with movie Run Time
+    There is no strong correlation with profitability or Return on Investment when comparing short vs. long run times. However, audiences do seem to prefer movies either on the shorter side or to strap themselves in for a 2.5 hour epic. If the movie concept captures the audience's attention, they'll be glued to their seats to watch it for the entire duration.
 
-Limitations:
+From the start, our focal point was profit. As such, we believe these results would benefit Microsoft should they be taken into consideration. The formula for making money from movies appears to rely on the genre and release date, with the added bonus that the right genre and right release date leads to a well-received movie.
 
-*Missing data
-*Dataset contains incorrect information, such as two movies having the same name. The release date would correlate with one movie, but the genre would correlate with the secondary movie.
-*The cost of acquiring pre-existing intellectual property was not factored in to this analysis.
+## Future Insights & Next Steps
 
-Next Steps:
-*Look into Streaming vs. Box office performance for genres
-*Explore a potential partnership with Microsoft's Gaming Division to handle animation needs.
-*Determine if any particular actor, director, or writer has an impact on profits or popularity.
-*Compare the data with historical data trends to see if audience preferences have changed over time.
+ - Look into Streaming vs. Box office performance for genres.
+ - Explore a potential partnership with Microsoft's Gaming Division to handle animation needs.
+ - Determine if any particular actor, director, or writer has an impact on profits or popularity.
+ - Compare the data with historical data trends to see if audience preferences have changed over time.
 
 ## For More Information
 
 Please review our full analysis in [our Jupyter Notebook](./Phase1_Project_Notebook.ipynb) or our [presentation](./presentation.pdf).
 
 ## Repository Structure
-
-Describe the structure of your repository and its contents, for example:
 
 ```
 ├── exploratory_files                   <- Jupyter notebooks for data exploration and testing
