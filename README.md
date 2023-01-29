@@ -57,15 +57,15 @@ The analysis also determined that there was no strong correlation between runtim
 
 ## Conclusions
 
-1. Focus on an Animation Genre Movie
+### Focus on an Animation Genre Movie
 
 This genre of movie was shown to have the highest profitability, including worldwide gross, net profit, profit to production cost ratio. It has received on average received a high number of votes in terms of audience and critic ratings, indicating its popularity. Due to their typically kid-friendly nature, the potential audience range for animated movies typically spans across the largest age range.
 
-2. Release the Movie in the Summer or Right Before the Winter Holidays
+### Release the Movie in the Summer or Right Before the Winter Holidays
 
 Movies released around these seasons profited the most. The months of May, June, and July in particular are very successful release months. The second best time is either November or December. Movie awards season typically begins late in the year in the United States and release of a movie before the winter holidays will get your movie in the running just in time. These time periods are generally a time when children are out of school and adults will have time off of work as a result of vacation or holiday leave.
 
-3. Do not be overly concerned with movie Run Time
+### Do not be overly concerned with movie Run Time
 
 There is no strong correlation with profitability or Return on Investment when comparing short vs. long run times. However, audiences do seem to prefer movies either on the shorter side or to strap themselves in for a 2.5 hour epic. If the movie concept captures the audience's attention, they'll be glued to their seats to watch it for the entire duration.
 
