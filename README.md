@@ -65,7 +65,7 @@ This genre of movie was shown to have the highest profitability, including world
 
 Movies released around these seasons profited the most. The months of May, June, and July in particular are very successful release months. The second best time is either November or December. Movie awards season typically begins late in the year in the United States and release of a movie before the winter holidays will get your movie in the running just in time. These time periods are generally a time when children are out of school and adults will have time off of work as a result of vacation or holiday leave.
 
-#### Do not be overly concerned with movie Run Time
+#### Do not be Overly Concerned with Movie Runtime
 
 There is no strong correlation with profitability or Return on Investment when comparing short vs. long run times. However, audiences do seem to prefer movies either on the shorter side or to strap themselves in for a 2.5 hour epic. If the movie concept captures the audience's attention, they'll be glued to their seats to watch it for the entire duration.
 
